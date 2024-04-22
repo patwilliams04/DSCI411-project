@@ -8,12 +8,19 @@ This project focuses on the prediction and interpretation of economic health ind
 - **Data Collection**: Aggregated a robust dataset from Macrotrends.net, covering several economic aspects... may still want to re/oversample this data for more observations
 - **Data Preprocessing**: Conducted initial cleaning, ensuring consistency in frequency and addressing any missing values... still need to remove outliers
 - **Exploratory Data Analysis (EDA)**: Performed a preliminary analysis to understand distributions and identify patterns... could redo this analysis after removing outliers
-
-### Pending Steps:
 - **Feature Engineering**: To improve predictive capabilities,I plan to engineer some additional features that capture economic cycles and trends effectively (ratios, interaction terms, etc)
 - **Model Development**: I will build and train a non-linear regression models and some neural networks to analyze the relationships within the data.
 - **Model Evaluation**: Testing will be carried out to assess the accuracy and reliability of the predictive models.
 - **Interpretation of Results**: We aim to provide clear interpretations of the model outcomes, translating such complex relationships into understandable insights.
+
+## Project Replication
+- **BEFORE RUNNING EACH FILE**: Must change the directory to your specific machines filepath directory
+- Clone this repo to your machine.
+- Delete any csv files that were created by code in this repo; ie csv files named with 'economic_data' or 'final' in the name
+- Run dataGathering.ipynb, should create economic_data.csv
+- Run EDA.ipynb, should create final_df.csv
+- Run PreProcessing.ipynb, should createe final_economic_data.csv
+- Run toyModeling.ipynb to get final model performances and evaluation metric visualizations   
 
 ## Data Source
 The data for this project was sourced from [Macrotrends](https://www.macrotrends.net), a websitee with historical data on global economic indicators, stock markets, commodities, and more. The dataset spans various economic metrics, all compiled with attention to historical depth and accuracy, making it a valuable resource for economic analysis and forecasting. Web scraping and data aggregation were conducted in python. 
